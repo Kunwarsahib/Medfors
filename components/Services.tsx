@@ -2,19 +2,15 @@
 
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
-import { Button } from "@/components/ui/button"
 import { 
   Building2, 
   Clock, 
   Users, 
-  UserCheck,
   Stethoscope,
   Heart,
   Activity,
   FileText,
   Briefcase,
-  GraduationCap,
-  Shield,
   ArrowRight
 } from "lucide-react"
 import { motion } from "framer-motion"
@@ -110,7 +106,7 @@ export function Services() {
               Engagement Models
             </h3>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Choose the staffing model that best fits your organization's needs and operational requirements
+              Choose the staffing model that best fits your organization&apos;s needs and operational requirements
             </p>
           </motion.div>
 

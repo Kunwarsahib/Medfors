@@ -41,7 +41,7 @@ export function Hero() {
             {/* Headline */}
             <div className="space-y-4">
               <h1 className="text-4xl lg:text-6xl font-bold text-foreground leading-tight">
-                Staffing India's Rural & Semi-Urban Healthcare — Fast and Credible.
+                Staffing India&apos;s Rural & Semi-Urban Healthcare — Fast and Credible.
               </h1>
               <p className="text-xl text-muted-foreground leading-relaxed">
                 We connect graduating doctors, nurses, and paramedics with hospitals, NGOs, and care homes — via direct hire, contract, or payrolling.
@@ -63,7 +63,7 @@ export function Hero() {
             {/* Trust Caption */}
             <div className="flex items-center gap-2 text-sm text-muted-foreground">
               <Shield className="h-4 w-4 text-primary" />
-              <span>Backed by decades of leadership in India's healthcare ecosystem.</span>
+              <span>Backed by decades of leadership in India&apos;s healthcare ecosystem.</span>
             </div>
 
             {/* Micro-badges */}

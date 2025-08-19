@@ -1,6 +1,5 @@
 "use client"
 
-import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { 
@@ -12,8 +11,6 @@ import {
   Clock,
   Users,
   FileText,
-  ArrowRight,
-  CheckCircle,
   Heart,
   Globe
 } from "lucide-react"
@@ -84,7 +81,7 @@ export function Audiences() {
               Tailored Solutions for Every Need
             </h2>
             <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
-              Whether you're a healthcare facility seeking reliable staff or a graduate looking for opportunities, 
+              Whether you&apos;re a healthcare facility seeking reliable staff or a graduate looking for opportunities, 
               we have the right solution for you.
             </p>
           </motion.div>

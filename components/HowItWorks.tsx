@@ -10,10 +10,6 @@ import {
   Rocket,
   Users,
   UserCheck,
-  MapPin,
-  Clock,
-  Shield,
-  GraduationCap,
   ArrowRight
 } from "lucide-react"
 import { motion, AnimatePresence } from "framer-motion"

@@ -14,6 +14,7 @@ import { LeadForm } from "@/components/LeadForm"
 import { Footer } from "@/components/Footer"
 import { StickyMobileActions } from "@/components/StickyMobileActions"
 import Script from "next/script"
+import { Suspense } from "react"
 
 export default function Home() {
   // JSON-LD Structured Data
@@ -151,60 +152,62 @@ export default function Home() {
           __html: JSON.stringify(faqSchema),
         }}
       />
-      
+
       <main className="min-h-screen">
         <Header />
-      
-      <section id="hero">
-        <Hero />
-      </section>
-      
-      <section id="trust">
-        <TrustBar />
-      </section>
-      
-      <section id="how-it-works">
-        <HowItWorks />
-      </section>
-      
-      <section id="services">
-        <Services />
-      </section>
-      
-      <section id="audiences">
-        <Audiences />
-      </section>
-      
-      <section id="universities">
-        <UniversityPartnership />
-      </section>
-      
-      <section id="regions">
-        <Regions />
-      </section>
-      
-      <section id="board">
-        <Board />
-      </section>
-      
-      <section id="testimonials">
-        <Testimonials />
-      </section>
-      
-      <section id="faq">
-        <FAQ />
-      </section>
-      
-      <section id="cta">
-        <CTASection />
-      </section>
-      
-      <section id="lead-form">
-        <LeadForm />
-      </section>
-      
-      <Footer />
-      <StickyMobileActions />
+
+        <section id="hero">
+          <Hero />
+        </section>
+
+        <section id="trust">
+          <TrustBar />
+        </section>
+
+        <section id="how-it-works">
+          <HowItWorks />
+        </section>
+
+        <section id="services">
+          <Services />
+        </section>
+
+        <section id="audiences">
+          <Audiences />
+        </section>
+
+        <section id="universities">
+          <UniversityPartnership />
+        </section>
+
+        <section id="regions">
+          <Regions />
+        </section>
+
+        <section id="board">
+          <Board />
+        </section>
+
+        <section id="testimonials">
+          <Testimonials />
+        </section>
+
+        <section id="faq">
+          <FAQ />
+        </section>
+
+        <section id="cta">
+          <CTASection />
+        </section>
+
+        <Suspense fallback={<div>Loading form...</div>}>
+          <section id="lead-form">
+            <LeadForm />
+          </section>
+        </Suspense>
+
+        <Footer />
+        <StickyMobileActions />
       </main>
     </>
   )
